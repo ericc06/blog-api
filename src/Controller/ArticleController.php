@@ -8,13 +8,15 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use JMS\Serializer\SerializationContext;
+
+//use JMS\Serializer\SerializationContext;
 
 class ArticleController extends Controller
 {
     /**
      * @Route("/articles/{id}", name="article_show")
      */
+    /*
     public function show(Article $article)
     {
         $data = $this->get('jms_serializer')->serialize(
@@ -28,10 +30,12 @@ class ArticleController extends Controller
 
         return $response;
     }
+    */
 
     /**
      * @Route("/articles", name="article_list", methods={"GET"})
      */
+    /*
     public function list()
     {
         $articles = $this->getDoctrine()->getManager()
@@ -47,10 +51,12 @@ class ArticleController extends Controller
 
         return $response;
     }
+    */
 
     /**
      * @Route("/articles", name="article_create", methods={"POST"})
      */
+    /*
     public function create(Request $request)
     {
         $data = $request->getContent();
@@ -62,4 +68,5 @@ class ArticleController extends Controller
 
         return new Response('', Response::HTTP_CREATED);
     }
+    */
 }

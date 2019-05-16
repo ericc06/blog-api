@@ -33,6 +33,17 @@ class Article
      */
     private $content;
 
+    /**
+     * @ORM\ManyToOne(
+     *     targetEntity="App\Entity\Author",
+     *     inversedBy="articles",
+     *     cascade={"all"},
+     *     fetch="EAGER"
+     * )
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $author;
+
     public function __construct($data)
     {
         $this->title = $data['title'];
@@ -64,6 +75,18 @@ class Article
     public function setContent(?string $content): self
     {
         $this->content = $content;
+
+        return $this;
+    }
+
+    public function getAuthor(): ?Author
+    {
+        return $this->author;
+    }
+
+    public function setAuthor(?Author $author): self
+    {
+        $this->author = $author;
 
         return $this;
     }

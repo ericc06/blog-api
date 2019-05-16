@@ -2,13 +2,16 @@
 
 namespace App\Serializer\Listener;
 
-use JMS\Serializer\EventDispatcher\Events;
+/*use JMS\Serializer\EventDispatcher\Events;
 use JMS\Serializer\EventDispatcher\EventSubscriberInterface;
 use JMS\Serializer\EventDispatcher\ObjectEvent;
 use JMS\Serializer\Metadata\StaticPropertyMetadata;
+*/
 
 class ArticleListener implements EventSubscriberInterface
 {
+}
+/*
     public static function getSubscribedEvents()
     {
         return [

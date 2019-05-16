@@ -3,15 +3,18 @@
 namespace App\Serializer\Handler;
 
 use App\Entity\Article;
-use JMS\Serializer\GraphNavigator;
+
+/*use JMS\Serializer\GraphNavigator;
 use JMS\Serializer\Handler\SubscribingHandlerInterface;
 use JMS\Serializer\JsonSerializationVisitor;
 use JMS\Serializer\JsonDeserializationVisitor;
 use JMS\Serializer\SerializationContext as Context;
+*/
 
 class ArticleHandler implements SubscribingHandlerInterface
 {
-    public static function getSubscribingMethods()
+}
+/*    public static function getSubscribingMethods()
     {
         return [
             [
